@@ -308,7 +308,7 @@ public class AnalogPrototype {
    * @param omega          double containing the analog frequency for evaluation of the transfer function.
    * @return               Complex object containing the value of the transfer function at this frequency.
    */
-  protected Complex evaluate( double omega ) {
+  public Complex evaluate( double omega ) {
     
     if ( T == null ) computeTransferFunction();
     
@@ -323,7 +323,7 @@ public class AnalogPrototype {
    * @param omega          double containing the analog frequency for evaluation of the group delay.
    * @return               double containing the group delay at this frequency.
    */
-  protected double groupDelay( double omega ) {
+  public double groupDelay( double omega ) {
     
     if ( T== null ) computeTransferFunction();
     
